@@ -1,0 +1,44 @@
+// home page nav
+.nav {
+    //font-family: 'NillandRegular';
+	clear: both;
+    background: @borderColor;
+    text-align: center;
+	padding: @borderWidth / 2;
+    margin: @borderWidth / 2 0;
+	/*&.nav-top {
+		border-bottom: 1px solid @primary;
+	}
+	&.nav-bottom {
+		border-top: 1px solid @primary;
+	}*/
+	
+	ul {
+		.nolist;
+		.dash-list;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 485px;
+		
+		.fade-list;
+	}
+	a {
+		-webkit-transition: .15s all ease-in-out;
+		//display: block;
+		color: black;
+		text-decoration: none;
+		&:hover {
+			//background: rgba(0, 0, 0, .5);
+			//.inner-shadow(1px,1px);
+		}
+	}
+	.active {
+		font-weight: bold;
+	}
+}
+
+// breadcrums
+.breadcrumbs {
+    margin-top: -.5em;
+}
+

@@ -1,0 +1,36 @@
+.pagination {
+    //background: @borderColor;
+	text-align: center;
+	padding: @borderWidth / 2;    
+	.hidden {
+		a, a:visited {
+			text-decoration: none;
+			color: lighten(@primary, 60%);
+		}
+	}
+	ul {
+		.nolist;
+		.horizontal-list;
+	}
+	.page, .first, .last {
+		.hide;
+	}
+}
+
+
+
+// article page navigation
+.current-page {
+    font-weight: bold;
+}
+
+.page-nav {
+    background: lighten(@borderColor, 80%);
+    margin: 1em 0;
+    text-align: center;
+    padding: 1em;
+}
+.prev-page {
+}
+.next-page {
+}

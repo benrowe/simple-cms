@@ -1,0 +1,75 @@
+
+@import "base-mixins.less";
+
+.well-login {
+	color: #FFF;
+	margin-top: 300px;
+	.form-actions {
+		background: transparent;
+		border: 0;
+	}
+}
+
+.items {
+	&>div {
+		border-bottom: 1px solid #EEE;
+		padding-bottom: 2em;
+		position: relative;
+		margin-bottom: 1em;
+		.btn-group {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		&:target {
+			background-color: #fffbe2;
+		}
+	}
+}
+textarea {
+	min-height: 16em;
+}
+
+.published-false {
+	//color: #CCC;
+}
+#footer {
+	margin-bottom: 8em;
+}
+
+.well-large {
+	margin-top: 1em;
+} 
+
+// the yii standard widget
+.portlet {
+	//padding: 60px;
+	
+	margin-bottom: 30px;
+	background-color: #eeeeee;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	.portlet-title {
+		.border-radius(6px, 0, 0, 6px);
+		font-size: 1.5em;
+		background: rgba(0, 0, 0, .1);
+		padding: 10px;
+	}
+	.portlet-content {
+		padding: 10px;
+	}
+}
+
+// markdown preview
+.wmd-preview {
+	padding: 10px;
+	border: 1px dashed #CCC;
+	margin-top: 10px;
+	background: #EFEFEF;
+}
+
+.popup-date-picker {
+	background: red;
+	border: 4px solid black;
+}

@@ -1,0 +1,44 @@
+.container {
+    border-left: @border;
+    border-right: @border;    
+    width: 960px - (@borderWidth * 2);
+    margin: 0 auto;
+    padding: @borderWidth;
+}
+
+// header
+#header {
+    text-align: center;
+	//border-bottom: 1px solid @primary;
+}
+
+#logo {
+	//font-family: 'NillandRegular';
+	font-size: 4em;
+	color: @primary;
+	margin: 0;
+	text-transform: uppercase;
+	
+}
+#sub-logo {
+	//font-family: 'NillandRegular';
+	margin: 0 0 .7em;
+	color: @primary;
+	text-transform: uppercase;
+	font-size: 2em;
+	/*&:after, &:before {
+		content:"\00a0\00a0\2014\00a0\00a0";
+	}*/
+}
+.content {
+    margin: @borderWidth / 2;
+    margin-bottom: @borderWidth;
+    //background: fade(blue, 10%);
+    position: relative;
+}
+
+// footer
+#footer {
+	text-align: center;
+	margin-top: 2em;
+}
