@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="benrowe.info" default="build" basedir="../">
+	
+	<property file="build/ant.properties" />
+	
+	<property environment="ENV" />
+	
+	<target name="build">
+		<antcall target="prepare" />
+	</target>
+	
+	<target name="prepare" depends="-intro">
+		<mkdir dir="build/tmp" />
+		<copy todir="build/tmp" includeEmptyDirs="true">
+			<dirset dir="${dir.source}/">
+				<patternset>
+					<include name="*"/>
+					<exclude name="build/"/>
+					<exclude name="nbproject/"/>
+				</patternset>
+				<fileset dir="."></fileset>
+			</dirset>
+			
+		</copy>
+			
+		<!--<delete dir="tmp"/>-->
+		<!--<copy todir="${dir.intermediate}" includeEmptyDirs="true">
+              <dirset dir="${dir.source}/" excludes="${file.default.exclude}, ${file.exclude}"/>
+          </copy>-->
+	</target>
+	<target name="-intro">
+		<echo message="====================================================================="/>
+		<echo message="Welcome to the Build Script!"/>
+		<echo message=" "/>
+		<echo message="====================================================================="/>
+		<echo message=" "/>
+	</target>
+	<target name="upload_files">
+		<!--<ftp server=""
+         userid="your_user_name"
+         password="your_password"
+         port="21"
+         remotedir="/public_html"
+         passive="yes"
+         binary="no">
+			<fileset dir=".">
+				<include name="" />
+			</fileset>
+		</ftp>-->
+	</target>
+</project>
