@@ -1,0 +1,58 @@
+<mockup version="1.0" skin="sketch" measuredW="2072" measuredH="983" mockupW="1743" mockupH="983">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="329" y="41" w="1743" h="942" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="694" y="201" w="659" h="50" measuredW="275" measuredH="41" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Welcome%20to%20%22CMS%22</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::VRule" x="679" y="0" w="-1" h="-1" measuredW="5" measuredH="100" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::VRule" x="1615" y="0" w="-1" h="-1" measuredW="5" measuredH="100" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Paragraph" x="860" y="266" w="526" h="61" measuredW="200" measuredH="80" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Before%20we%20begin%2C%20we%20have%20detected%20some%20problems%20with%20your%20current%20environment.%20Please%20correct%20these%20issues%20and%20try%20again</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::CheckBoxGroup" x="849" y="342" w="526" h="74" measuredW="260" measuredH="42" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16750848</color>
+        <text>%5B%20%5D%20warning%3A%20this%20directory%20is%20not%20writable%0A%5B%20%5D%20warning%3A%20another%20directory%20is%20not%20writable</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Canvas" x="838" y="327" w="548" h="114" measuredW="100" measuredH="70" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Link" x="1261" y="306" w="-1" h="-1" measuredW="129" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>re-examine%20problems</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="1332" y="488" w="-1" h="-1" measuredW="54" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>wizard-what%26bm%3Bwizard-what.bmml%26bm%3Bwizard-what.bmml%26bm%3Bwizard-what.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%221003%2C488%2C1057%2C515%22%20href%3D%22wizard-what.bmml%22%20alt%3D%22wizard-what%22%20id%3D%2216%22/%3E</map>
+        <text>Done</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Icon" x="1245" y="308" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ReloadIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="1414" y="127" w="-1" h="-1" measuredW="50" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>Locale%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="1464" y="127" w="-1" h="-1" measuredW="50" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>EN_AU</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Link" x="1520" y="127" w="-1" h="-1" measuredW="95" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>not%20your%20locale%3F</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

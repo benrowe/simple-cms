@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class HttpResponseHeader | CMS</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?3425151210"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="main"><a href="package-CMS.html">CMS<span></span></a>
+						<ul>
+				<li class="main"><a href="package-CMS.Controller.html">Controller</a>
+						</li>
+				<li class="main"><a href="package-CMS.IO.html">IO<span></span></a>
+						<ul>
+				<li class="main"><a href="package-CMS.IO.Filesystem.html">Filesystem</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="package-CMS.Model.html">Model<span></span></a>
+						<ul>
+				<li class="main"><a href="package-CMS.Model.Form.html">Form</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="package-CMS.Widget.html">Widget</a>
+						</li>
+							</ul></li>
+				<li><a href="package-bootstrap.html">bootstrap<span></span></a>
+						<ul>
+				<li><a href="package-bootstrap.widgets.html">widgets<span></span></a>
+						<ul>
+				<li><a href="package-bootstrap.widgets.input.html">input</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-None.html">None</a>
+						</li>
+				<li><a href="package-PACKAGE.html">PACKAGE<span></span></a>
+						<ul>
+				<li><a href="package-PACKAGE.NAME.html">NAME</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="package-Static.html">Static<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Static.File.html">File<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Static.File.Deliverer.html">Deliverer</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-FileDeliverer.html">FileDeliverer</a></li>
+				<li><a href="class-FileMimeTypes.html">FileMimeTypes</a></li>
+				<li><a href="class-HttpResponse.html">HttpResponse</a></li>
+				<li class="active"><a href="class-HttpResponseHeader.html">HttpResponseHeader</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Static.File.Deliverer.html" title="Summary of Static\File\Deliverer"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class HttpResponseHeader</h1>
+
+
+	<div class="description">
+	
+<p>Reponsible for management of http headers &amp; initial response code sent to
+the client</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Static.html">Static</a>\<a href="package-Static.File.html">File</a>\<a href="package-Static.File.Deliverer.html">Deliverer</a><br />
+
+				<b>Copyright:</b>
+				© Arinex 2011<br />
+				<b>License:</b>
+				<a href="http://arinex.com.au/licence">http://arinex.com.au/licence</a><br />
+				<b>Author:</b>
+				Ben Rowe &lt;<a
+href="mailto:browe&#64;arinex.com.au">browe&#64;<!---->arinex.com.au</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-HttpResponseHeader.html#17" title="Go to source code">HttpResponseHeader.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#74" title="Go to source code">__construct</a>( <span>integer <var>$responseCode</var> = <code><a href="class-HttpResponseHeader.html#CODE_SUCCESS_OK">HttpResponseHeader::<b>CODE_SUCCESS_OK</b></a></code></span>, <span>array <var>$headers</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Estabish the response code &amp; initial headers</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Estabish the response code &amp; initial headers</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$responseCode</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$headers</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAll" id="_getAll">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAll">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#88" title="Go to source code">getAll</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get all the headers currently set</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all the headers currently set</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#98" title="Go to source code">add</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span>, <span>boolean <var>$replace</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a header, if it exists already it will be appended or over-ridden based
+on the $replace value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a header, if it exists already it will be appended or over-ridden based
+on the $replace value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$replace</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-HttpResponseHeader.html">HttpResponseHeader</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#118" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add/Replace the header</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add/Replace the header</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-HttpResponseHeader.html">HttpResponseHeader</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#131" title="Go to source code">exists</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if the header has been set or not</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if the header has been set or not</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="remove" id="_remove">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-HttpResponseHeader.html">HttpResponseHeader</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_remove">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#142" title="Go to source code">remove</a>( <span>type <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Remove the header from the reponse</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Remove the header from the reponse</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-HttpResponseHeader.html">HttpResponseHeader</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReponseCode" id="_setReponseCode">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReponseCode">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#156" title="Go to source code">setReponseCode</a>( <span>integer <var>$responseCode</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the response code to deliver</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the response code to deliver</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$responseCode</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReponseCode" id="_getReponseCode">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReponseCode">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#166" title="Go to source code">getReponseCode</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the response code currently set</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the response code currently set</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deliver" id="_deliver">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deliver">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#176" title="Go to source code">deliver</a>( )</code>
+
+		<div class="description short">
+			
+<p>Deliver the http headers are currently set to the http service</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Deliver the http headers are currently set to the http service</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getResponseCodeDescription" id="__getResponseCodeDescription">
+
+		<td class="attributes"><code>
+			 private 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getResponseCodeDescription">#</a>
+		<code><a href="source-class-HttpResponseHeader.html#196" title="Go to source code">_getResponseCodeDescription</a>( <span> <var>$responseCode</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="CODE_SUCCESS_OK" id="CODE_SUCCESS_OK">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#52" title="Go to source code"><b>CODE_SUCCESS_OK</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">200</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_SUCCESS_OK" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Common http response codes</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Common http response codes</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_REDIRECT_MULTIPLE" id="CODE_REDIRECT_MULTIPLE">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#57" title="Go to source code"><b>CODE_REDIRECT_MULTIPLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">300</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_REDIRECT_MULTIPLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_REDIRECT_MOVED" id="CODE_REDIRECT_MOVED">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#58" title="Go to source code"><b>CODE_REDIRECT_MOVED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">301</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_REDIRECT_MOVED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_REDIRECT_FOUND" id="CODE_REDIRECT_FOUND">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#59" title="Go to source code"><b>CODE_REDIRECT_FOUND</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">302</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_REDIRECT_FOUND" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_REDIRECT_NOT_MODIFIED" id="CODE_REDIRECT_NOT_MODIFIED">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#60" title="Go to source code"><b>CODE_REDIRECT_NOT_MODIFIED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">304</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_REDIRECT_NOT_MODIFIED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_REDIRECT_TEMP_REDIECT" id="CODE_REDIRECT_TEMP_REDIECT">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#61" title="Go to source code"><b>CODE_REDIRECT_TEMP_REDIECT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">307</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_REDIRECT_TEMP_REDIECT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_CLIENT_ERROR_BAD_REQUEST" id="CODE_CLIENT_ERROR_BAD_REQUEST">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#63" title="Go to source code"><b>CODE_CLIENT_ERROR_BAD_REQUEST</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">400</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_CLIENT_ERROR_BAD_REQUEST" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_CLIENT_ERROR_UNAUTHORISED" id="CODE_CLIENT_ERROR_UNAUTHORISED">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#64" title="Go to source code"><b>CODE_CLIENT_ERROR_UNAUTHORISED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">401</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_CLIENT_ERROR_UNAUTHORISED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_CLIENT_ERROR_FORBIDDEN" id="CODE_CLIENT_ERROR_FORBIDDEN">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#65" title="Go to source code"><b>CODE_CLIENT_ERROR_FORBIDDEN</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">403</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_CLIENT_ERROR_FORBIDDEN" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_CLIENT_ERROR_NOT_FOUND" id="CODE_CLIENT_ERROR_NOT_FOUND">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#66" title="Go to source code"><b>CODE_CLIENT_ERROR_NOT_FOUND</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">404</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_CLIENT_ERROR_NOT_FOUND" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_CLIENT_ERROR_GONE" id="CODE_CLIENT_ERROR_GONE">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#67" title="Go to source code"><b>CODE_CLIENT_ERROR_GONE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">410</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_CLIENT_ERROR_GONE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_SERVER_ERROR_INTERNAL" id="CODE_SERVER_ERROR_INTERNAL">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#69" title="Go to source code"><b>CODE_SERVER_ERROR_INTERNAL</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">500</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_SERVER_ERROR_INTERNAL" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_SERVER_ERROR_NOT_IMPLEMENTED" id="CODE_SERVER_ERROR_NOT_IMPLEMENTED">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#70" title="Go to source code"><b>CODE_SERVER_ERROR_NOT_IMPLEMENTED</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">501</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_SERVER_ERROR_NOT_IMPLEMENTED" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_SERVER_ERROR_UNAVAILABLE" id="CODE_SERVER_ERROR_UNAVAILABLE">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#71" title="Go to source code"><b>CODE_SERVER_ERROR_UNAVAILABLE</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">503</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_SERVER_ERROR_UNAVAILABLE" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CODE_SERVER_ERROR_PERMISSION" id="CODE_SERVER_ERROR_PERMISSION">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-HttpResponseHeader.html#72" title="Go to source code"><b>CODE_SERVER_ERROR_PERMISSION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">550</span></code></td>
+		<td class="description"><div>
+			<a href="#CODE_SERVER_ERROR_PERMISSION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_headers" id="$_headers">
+
+		<td class="attributes"><code>
+			private 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HttpResponseHeader.html#27" title="Go to source code"><var>$_headers</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$_headers" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_responseCode" id="$_responseCode">
+
+		<td class="attributes"><code>
+			private 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HttpResponseHeader.html#28" title="Go to source code"><var>$_responseCode</var></a>
+		</td>
+		<td class="value"><code><code><a href="class-HttpResponseHeader.html#CODE_SUCCESS_OK">HttpResponseHeader::<b>CODE_SUCCESS_OK</b></a></code></code></td>
+		<td class="description"><div>
+			<a href="#$_responseCode" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_codeDescriptions" id="$_codeDescriptions">
+
+		<td class="attributes"><code>
+			private 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-HttpResponseHeader.html#29" title="Go to source code"><var>$_codeDescriptions</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+    <span class="php-num">200</span> =&gt; <span class="php-quote">'ok'</span>,
+
+    <span class="php-num">300</span> =&gt; <span class="php-quote">'multiple choices'</span>,
+    <span class="php-num">301</span> =&gt; <span class="php-quote">'moved permanently'</span>,
+    <span class="php-num">302</span> =&gt; <span class="php-quote">'found'</span>,
+    <span class="php-num">304</span> =&gt; <span class="php-quote">'not modified'</span>,
+    <span class="php-num">307</span> =&gt; <span class="php-quote">'temporary redirect'</span>,
+
+    <span class="php-num">400</span> =&gt; <span class="php-quote">'bad request'</span>,
+    <span class="php-num">401</span> =&gt; <span class="php-quote">'unauthorized'</span>,
+    <span class="php-num">403</span> =&gt; <span class="php-quote">'forbidden'</span>,
+    <span class="php-num">404</span> =&gt; <span class="php-quote">'not found'</span>,
+    <span class="php-num">410</span> =&gt; <span class="php-quote">'gone'</span>,
+
+    <span class="php-num">500</span> =&gt; <span class="php-quote">'interal server error'</span>,
+    <span class="php-num">501</span> =&gt; <span class="php-quote">'not implemented'</span>,
+    <span class="php-num">503</span> =&gt; <span class="php-quote">'service unavailable'</span>,
+    <span class="php-num">550</span> =&gt; <span class="php-quote">'permission denied'</span>,
+
+
+)</code></td>
+		<td class="description"><div>
+			<a href="#$_codeDescriptions" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

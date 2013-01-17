@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class FileDeliverer | CMS</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?3425151210"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="main"><a href="package-CMS.html">CMS<span></span></a>
+						<ul>
+				<li class="main"><a href="package-CMS.Controller.html">Controller</a>
+						</li>
+				<li class="main"><a href="package-CMS.IO.html">IO<span></span></a>
+						<ul>
+				<li class="main"><a href="package-CMS.IO.Filesystem.html">Filesystem</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="package-CMS.Model.html">Model<span></span></a>
+						<ul>
+				<li class="main"><a href="package-CMS.Model.Form.html">Form</a>
+						</li>
+							</ul></li>
+				<li class="main"><a href="package-CMS.Widget.html">Widget</a>
+						</li>
+							</ul></li>
+				<li><a href="package-bootstrap.html">bootstrap<span></span></a>
+						<ul>
+				<li><a href="package-bootstrap.widgets.html">widgets<span></span></a>
+						<ul>
+				<li><a href="package-bootstrap.widgets.input.html">input</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-None.html">None</a>
+						</li>
+				<li><a href="package-PACKAGE.html">PACKAGE<span></span></a>
+						<ul>
+				<li><a href="package-PACKAGE.NAME.html">NAME</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="package-Static.html">Static<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Static.File.html">File<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Static.File.Deliverer.html">Deliverer</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-FileDeliverer.html">FileDeliverer</a></li>
+				<li><a href="class-FileMimeTypes.html">FileMimeTypes</a></li>
+				<li><a href="class-HttpResponse.html">HttpResponse</a></li>
+				<li><a href="class-HttpResponseHeader.html">HttpResponseHeader</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Static.File.Deliverer.html" title="Summary of Static\File\Deliverer"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class FileDeliverer</h1>
+
+
+	<div class="description">
+	
+<p>Description of FileDeliverer</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Component.html"><span>Component</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>FileDeliverer</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Static.html">Static</a>\<a href="package-Static.File.html">File</a>\<a href="package-Static.File.Deliverer.html">Deliverer</a><br />
+
+				<b>Copyright:</b>
+				© Arinex 2011<br />
+				<b>License:</b>
+				<a href="http://arinex.com.au/licence">http://arinex.com.au/licence</a><br />
+				<b>Author:</b>
+				Ben Rowe &lt;<a
+href="mailto:browe&#64;arinex.com.au">browe&#64;<!---->arinex.com.au</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-FileDeliverer.html#17" title="Go to source code">FileDeliverer.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-FileDeliverer.html#48" title="Go to source code">__construct</a>( <span>string <var>$fileName</var></span>, <span>boolean <var>$compress</var> = <span class="php-keyword1">true</span></span>, <span>integer <var>$ttl</var> = <code><a href="class-FileDeliverer.html#TTL_MONTH">FileDeliverer::<b>TTL_MONTH</b></a></code></span> )</code>
+
+		<div class="description short">
+			
+<p>Constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Constructor</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fileName</var></dt>
+					<dd><code>string</code><br> The file to deliver</dd>
+					<dt><var>$compress</var></dt>
+					<dd><code>boolean</code><br> defaults true, allow the file to be additionally compressed (if possible)</dd>
+					<dt><var>$ttl</var></dt>
+					<dd><code>integer</code><br> the amount of time the file should try to live in the client cache</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFile" id="_setFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFile">#</a>
+		<code><a href="source-class-FileDeliverer.html#63" title="Go to source code">setFile</a>( <span> <var>$file</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFile" id="_getFile">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFile">#</a>
+		<code><a href="source-class-FileDeliverer.html#71" title="Go to source code">getFile</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enableDebug" id="_enableDebug">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enableDebug">#</a>
+		<code><a href="source-class-FileDeliverer.html#78" title="Go to source code">enableDebug</a>( )</code>
+
+		<div class="description short">
+			
+<p>Enable debug functionality. This automatically disables caching and debug
+functionality</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enable debug functionality. This automatically disables caching and debug
+functionality</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="disableDebug" id="_disableDebug">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disableDebug">#</a>
+		<code><a href="source-class-FileDeliverer.html#87" title="Go to source code">disableDebug</a>( )</code>
+
+		<div class="description short">
+			
+<p>Disable all debug functionality</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Disable all debug functionality</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMimeTypeHandler" id="_getMimeTypeHandler">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-FileMimeTypes.html">FileMimeTypes</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMimeTypeHandler">#</a>
+		<code><a href="source-class-FileDeliverer.html#95" title="Go to source code">getMimeTypeHandler</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the mime type handler</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the mime type handler</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-FileMimeTypes.html">FileMimeTypes</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMimeTypeHandler" id="_setMimeTypeHandler">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMimeTypeHandler">#</a>
+		<code><a href="source-class-FileDeliverer.html#108" title="Go to source code">setMimeTypeHandler</a>( <span><code><a href="class-FileMimeTypes.html">FileMimeTypes</a></code> <var>$fmt</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the mime type handler to use</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the mime type handler to use</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fmt</var></dt>
+					<dd><code><code><a href="class-FileMimeTypes.html">FileMimeTypes</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResponse" id="_getResponse">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-HttpResponse.html">HttpResponse</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResponse">#</a>
+		<code><a href="source-class-FileDeliverer.html#118" title="Go to source code">getResponse</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the http response object</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the http response object</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-HttpResponse.html">HttpResponse</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReponse" id="_setReponse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReponse">#</a>
+		<code><a href="source-class-FileDeliverer.html#132" title="Go to source code">setReponse</a>( <span><code><a href="class-HttpResponse.html">HttpResponse</a></code> <var>$response</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the http response object to use</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the http response object to use</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$response</var></dt>
+					<dd><code><code><a href="class-HttpResponse.html">HttpResponse</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deliver" id="_deliver">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deliver">#</a>
+		<code><a href="source-class-FileDeliverer.html#143" title="Go to source code">deliver</a>( )</code>
+
+		<div class="description short">
+			
+<p>Deliver the requested file to the http sevice</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Deliver the requested file to the http sevice</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMimeType" id="_getMimeType">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMimeType">#</a>
+		<code><a href="source-class-FileDeliverer.html#176" title="Go to source code">getMimeType</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the mime type for the current file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the mime type for the current file</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Component.html#methods">Component</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Component.html#___get">__get()</a>, 
+			<a href="class-Component.html#___set">__set()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="TTL_HOUR" id="TTL_HOUR">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-FileDeliverer.html#44" title="Go to source code"><b>TTL_HOUR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">3600</span></code></td>
+		<td class="description"><div>
+			<a href="#TTL_HOUR" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TTL_DAY" id="TTL_DAY">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-FileDeliverer.html#45" title="Go to source code"><b>TTL_DAY</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">86400</span></code></td>
+		<td class="description"><div>
+			<a href="#TTL_DAY" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TTL_MONTH" id="TTL_MONTH">
+
+		<td class="attributes"><code>
+			integer
+		</code></td>
+		<td class="name"><code>
+				<a href="source-class-FileDeliverer.html#46" title="Go to source code"><b>TTL_MONTH</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">2678400</span></code></td>
+		<td class="description"><div>
+			<a href="#TTL_MONTH" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_mimeHandler" id="$_mimeHandler">
+
+		<td class="attributes"><code>
+			private 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-FileDeliverer.html#32" title="Go to source code"><var>$_mimeHandler</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_mimeHandler" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_compress" id="$_compress">
+
+		<td class="attributes"><code>
+			private 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-FileDeliverer.html#33" title="Go to source code"><var>$_compress</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$_compress" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_ttl" id="$_ttl">
+
+		<td class="attributes"><code>
+			private 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-FileDeliverer.html#34" title="Go to source code"><var>$_ttl</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_ttl" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_file" id="$_file">
+
+		<td class="attributes"><code>
+			private 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-FileDeliverer.html#36" title="Go to source code"><var>$_file</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_file" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_response" id="$_response">
+
+		<td class="attributes"><code>
+			private 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-FileDeliverer.html#38" title="Go to source code"><var>$_response</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_response" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_debug" id="$_debug">
+
+		<td class="attributes"><code>
+			private 
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-FileDeliverer.html#42" title="Go to source code"><var>$_debug</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$_debug" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
