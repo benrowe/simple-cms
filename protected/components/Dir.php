@@ -31,11 +31,11 @@ class Dir extends CComponent
      */
     function __construct($path)
     {
-		$path = realpath($path);
-		if (!$path) {
-			throw new Exception('Unable to resolve path');
+		$realPath = realpath($path);
+		if (!$realPath) {
+			throw new Exception('Unable to resolve path "'.$path.'"');
 		}
-        $this->path = $path;
+        $this->path = $realPath;
     }
 
     /**

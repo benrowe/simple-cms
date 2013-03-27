@@ -1,20 +1,20 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of AdminController
+ * Abstract base controller for all "admin" controllers. These are controllers
+ * that are used for an admin area (by default all actions require authentication!)
+ *
+ * This enables the authentication functionality to automatically block un-authenticated
+ * attempts to access any action
  *
  * @package CMS_Controller
  * @author ben
  */
-class AdminController extends Controller
+abstract class AdminController extends Controller
 {
 	public $layout = '/layouts/main';
-	
+
+
 	public function accessRules()
 	{
 		return array(
