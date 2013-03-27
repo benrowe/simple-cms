@@ -5,4 +5,3 @@ images/
 protected/data/
 *.sublime-project
 *.sublime-workspace
-protected/config/
