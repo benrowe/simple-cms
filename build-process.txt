@@ -1,0 +1,9 @@
+1.
+2. clear all cache
+3. clear assets
+4. drop folders
+  /build
+  /docs
+  /nbproject
+5. drop files
+  /index.test.php

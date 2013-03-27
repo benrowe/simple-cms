@@ -1,0 +1,29 @@
+# SFD
+#Header unset ETag
+FileETag None
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .js .xml .json .rss .atom
+
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+	SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+	RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+  </IfModule>
+</IfModule>
+
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteEngine on
+RewriteBase /projects/benrowe.info/
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+
+RewriteRule (.*)\.(css|less|js|jpg|ico|gif|png|swf|mp3)$ deliverer.php?file=$0 [QSA,L]
+
