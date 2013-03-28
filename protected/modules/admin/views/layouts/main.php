@@ -34,7 +34,9 @@ $cs->registerCssFile(Yii::app()->baseUrl.'/css/admin.css');
 		<div id="sub-logo">Programmer</div>
 	</div><!-- header -->
 
-	<?php $this->widget('bootstrap.widgets.BootNavbar', array(
+	<?php
+	$user = User::current();
+	$this->widget('bootstrap.widgets.BootNavbar', array(
 		 'fixed' => false,
 		//'fluid' => true,
 		'brand' => false,
@@ -67,7 +69,7 @@ $cs->registerCssFile(Yii::app()->baseUrl.'/css/admin.css');
 				'class'       => 'bootstrap.widgets.BootMenu',
 				'htmlOptions' => array('class' => 'pull-right'),
 				'items'       => array(
-					array('label' => 'Your Profile', 'url' => array('profile/index'), 'icon' => 'user white'),
+					array('label' => $user->display, 'url' => array('profile/index'), 'icon' => 'user white'),
 					//'---',
 					array('items' => array( //'url' => '#',
 							array('label' => 'Logout', 'url'=>array('default/logout'), 'icon' => 'off', 'linkOptions' => array('class' => 'sd', 'confirm' => 'Are you sure you want to logout?'), 'visible' => !Yii::app()->user->isGuest),
