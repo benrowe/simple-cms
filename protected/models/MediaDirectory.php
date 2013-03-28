@@ -25,6 +25,7 @@ class MediaDirectory extends CModel
 
 	public function __construct($path)
 	{
+		$this->createBasePath();
 		$this->setFullPath($path);
 	}
 
@@ -81,6 +82,17 @@ class MediaDirectory extends CModel
 	public static function basePath()
 	{
 		return Yii::getPathOfAlias(self::DIR_MEDIA_ALIAS);
+	}
+
+	/**
+	 * Create the base path if it does not exist
+	 */
+	public function createBasePath()
+	{
+		$path = self::basePath();
+		if (!is_dir($path)) {
+			mkdir($path, 0777, true);
+		}
 	}
 
 	public static function buildFullPathFromEncoded($encoded)
