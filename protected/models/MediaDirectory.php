@@ -91,7 +91,7 @@ class MediaDirectory extends CModel
 	{
 		$path = self::basePath();
 		if (!is_dir($path)) {
-			mkdir($path, 0777, true);
+			mkdir($path, self::CHMOD_MODE, true);
 		}
 	}
 
