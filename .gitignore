@@ -1,7 +1,7 @@
-/assets/
-/protected/runtime/
-/themes/classic/views/
-/images/
-/protected/data/
+assets/
+protected/runtime/
+themes/classic/views/
+images/
+protected/data/
 *.sublime-project
 *.sublime-workspace
