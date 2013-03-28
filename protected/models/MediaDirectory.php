@@ -115,6 +115,12 @@ class MediaDirectory extends CModel
 		return empty($path);
 	}
 
+	/**
+	 * Create a sub directory, relative to the media directory
+	 *
+	 * @param string $directoryName the path to create, relative from the media directory
+	 * @return boolean
+	 */
 	public function addSubDir($directoryName)
 	{
 		$newPath = $this->getFullPath().DIRECTORY_SEPARATOR.$directoryName;
