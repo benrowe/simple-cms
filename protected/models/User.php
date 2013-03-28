@@ -11,15 +11,15 @@
  *
  * @package CMS_Model
  * @author Ben Rowe <ben.rowe.83@gmail.com>
- * 
+ *
  * @property string $id
  * @property string $email
  * @property string $display
  * @property string $firstname
  * @property string $lastname
  * @property string $bio
- * 
- * 
+ *
+ *
  * @property string $path
  */
 class User extends CFormModel
@@ -28,21 +28,21 @@ class User extends CFormModel
 	private $_path;
 	/**
 	 * The identification for the user
-	 * 
+	 *
 	 * @var string
 	 */
 	private $_id;
-	
+
 	/**
 	 * The email address
-	 * 
+	 *
 	 * @var email
 	 */
 	private $_email;
-	
+
 	/**
 	 *
-	 * @var type 
+	 * @var type
 	 */
 	private $_password;
 	private $_salt;
@@ -53,13 +53,13 @@ class User extends CFormModel
 	//private $_author;
 
 	private $_users = array();
-	
+
 	const USER_LOCATION = 'protected/data/users/';
 	const ITEM_EXTENSION = 'json';
-	
+
 	/**
 	 * List of attributes for this model
-	 * 
+	 *
 	 * @return array
 	 */
 	public function attributeNames()
@@ -77,7 +77,7 @@ class User extends CFormModel
 			'bio',
 		);
 	}
-	
+
 	public function rules()
 	{
 		return array(
@@ -87,13 +87,32 @@ class User extends CFormModel
 			array('password', 'required', 'on' => 'create')
 		);
 	}
-	
+
+	/**
+	 * Get the identifier for the current user
+	 * @return string
+	 */
+	public static function id()
+	{
+		return Yii::app()->user->id;
+	}
+
+	public static function current()
+	{
+		return self::model()->getById(self::id());
+	}
+
+	/**
+	 * Generate a list of users for a dropdown component
+	 *
+	 * @return array
+	 */
 	public static function dropdown()
 	{
 		$m = self::model();
 		return CHtml::listData($m->getAll(), 'id', 'display');
 	}
-	
+
 	/*public function getAuthor()
 	{
 		return $this->_author;
@@ -105,7 +124,7 @@ class User extends CFormModel
 	}*/
 
 
-	
+
 	public function getPath()
 	{
 		return $this->_path;
@@ -185,7 +204,7 @@ class User extends CFormModel
 	{
 		$this->_display = $display;
 	}
-	
+
 	public function getBio()
 	{
 		return $this->_bio;
@@ -198,17 +217,17 @@ class User extends CFormModel
 
 	/**
 	 * Generate a random salt
-	 * 
+	 *
 	 * @return string
 	 */
 	protected function _generateSalt()
 	{
 		return uniqid('',true);
 	}
-	
+
 	/**
 	 * Validate an externally supplied password against the currently set password
-	 * 
+	 *
 	 * @param string $password
 	 * @return boolean
 	 */
@@ -216,22 +235,22 @@ class User extends CFormModel
 	{
 		return $this->hashPassword($password, $this->salt) === $this->password;
 	}
-	
+
 	/**
 	 * Hash a password using a supplied salt value
-	 * 
+	 *
 	 * @param string $password
 	 * @param string $salt
-	 * @return string 
+	 * @return string
 	 */
 	public function hashPassword($password, $salt)
 	{
 		return md5($salt.$password.$salt);
 	}
-	
+
 	/**
 	 * Retrieve an initialised instance of this model
-	 * 
+	 *
 	 * @param string $className
 	 * @return User
 	 */
@@ -239,10 +258,10 @@ class User extends CFormModel
 	{
 		return new $className;
 	}
-	
+
 	/**
 	 * Get the user by their primary key
-	 * 
+	 *
 	 * @param string $id
 	 * @return User
 	 */
@@ -251,10 +270,10 @@ class User extends CFormModel
 		$users = $this->_getAll()->getByProperty('id', $id);
 		return $users->count() == 1 ? $users[0] : false;
 	}
-	
+
 	/**
 	 * Get all the users available
-	 * 
+	 *
 	 * @return UserCollection
 	 */
 	private function _getAll()
@@ -267,54 +286,54 @@ class User extends CFormModel
 				$users = Dir::findAllFiles(self::USER_LOCATION, "/\." . self::ITEM_EXTENSION . "/");
 				$users = array_map('User::fromJson', $users);
 				$users = $this->_toUserCollection($users);
-				
+
 				Yii::app()->cache->set($cacheName, $users);
-				
+
 			}
 			$this->_users = $users;
 		}
 		return $this->_users;
 	}
-	
+
 	/**
 	 * Get all the users
-	 * 
+	 *
 	 * @return UserCollection
 	 */
 	public function getAll()
 	{
 		return $this->_getAll();
 	}
-	
+
 	public function beforeSave()
 	{
 		// make sure the password is hashed
 		if (strlen($this->_id) === 0) {
 			$this->_id = URLHelper::slugify($this->_display);
 		}
-		
+
 		// encrypt password
 		if (strlen($this->password) !== 32) {
 			$salt = $this->_generateSalt();
 			$this->salt = $salt;
 			$this->password = $this->hashPassword($this->password, $salt);
 		}
-		
+
 		return true;
 	}
-	
+
 	/**
 	 * Save the user model
-	 * 
+	 *
 	 * @return boolean
-	 * @throws CException 
+	 * @throws CException
 	 */
 	public function save()
 	{
 		if ($this->beforeSave() === false) {
 			return;
 		}
-		
+
 		if (empty($this->_path)) {
 			$path = self::USER_LOCATION.$this->_id.'.'.self::ITEM_EXTENSION;
 			if (file_exists($path)) {
@@ -324,9 +343,9 @@ class User extends CFormModel
 		}
 		// convert object to json & save :)
 		$itemAttributes = $this->getAttributes();
-		
+
 		unset($itemAttributes['path']);
-		
+
 		$dirName = dirname($this->_path);
 		if (!file_exists($dirName)) {
 			mkdir($dirName, 0755, true);
@@ -335,24 +354,24 @@ class User extends CFormModel
 		if (file_put_contents($this->_path, $encode) !== false) {
 			$this->onSave(new CEvent($this));
 			return true;
-		} 
+		}
 		throw new CException('unable to save user');
 		return false;
 	}
-	
+
 	/**
 	 * Raise the onSave event
-	 * 
-	 * @param CEvent $event 
+	 *
+	 * @param CEvent $event
 	 */
 	public function onSave($event)
 	{
 		$this->raiseEvent('onSave', $event);
 	}
-	
+
 	/**
-	 * Delete the model 
-	 * 
+	 * Delete the model
+	 *
 	 * @return boolean
 	 */
 	public function delete()
@@ -368,34 +387,34 @@ class User extends CFormModel
 		throw new CException('unable to delete user');
 		return false;
 	}
-	
+
 	/**
 	 * Raise the onDelete event
-	 * 
-	 * @param CEvent $event 
+	 *
+	 * @param CEvent $event
 	 */
 	public function onDelete($event)
 	{
 		$this->raiseEvent('onDelete', $event);
 	}
-	
+
 	/**
 	 * Convert an array of items into a UserCollection
-	 * 
+	 *
 	 * @param array $users
-	 * @return UserCollection 
+	 * @return UserCollection
 	 */
 	private function _toUserCollection(array $users)
 	{
 		return new UserCollection($users);
 	}
-	
+
 	/**
 	 * Generate a user from the json file
-	 * 
+	 *
 	 * @param string $path
 	 * @return User
-	 * @throws CException 
+	 * @throws CException
 	 */
 	public static function fromJson($path)
 	{
@@ -409,7 +428,7 @@ class User extends CFormModel
 
 	/**
 	 * Convert an standard object into a web item, based on it's type
-	 * 
+	 *
 	 * @param stdClass $data
 	 * @param string $path
 	 * @return User
