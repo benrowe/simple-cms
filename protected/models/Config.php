@@ -103,6 +103,11 @@ class Config extends CModel
 		return self::$_instance;
 	}
 
+	/**
+	 * The validation rules that apply to the configuration elements
+	 *
+	 * @return [type] [description]
+	 */
 	public function rules()
 	{
 		return array(
