@@ -1,12 +1,7 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of Config
+ * Holds the application config
  *
  * @author ben
  * @package CMS
@@ -39,6 +34,10 @@ class Config extends CModel
 	private $_gaEnabled = false;
 	private $_mediaExtensions = array();
 
+	/**
+	 * The list of attribute names that are available for configuration
+	 * @return array
+	 */
 	public function attributeNames()
 	{
 		return array(
@@ -74,6 +73,7 @@ class Config extends CModel
 	}
 
 	/**
+	 * Retrieve an instance of the Config class
 	 *
 	 * @return Config
 	 * @throws CException
@@ -82,6 +82,7 @@ class Config extends CModel
 	{
 		if (!self::$_instance) {
 			$c = new self;
+			// get the config file
 			$configFile = YiiBase::getPathOfAlias('application.data.config') . '.json';
 			if (!is_readable($configFile)) {
 				throw new CException('Unable to load config');
