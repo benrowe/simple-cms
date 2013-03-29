@@ -1,11 +1,9 @@
 <!-- The file upload form used as target for the file upload widget -->
-<?php if ($this->showForm) echo CHtml::beginForm($this -> url, 'post', $this -> htmlOptions);?>
+<?php echo CHtml::beginForm($this -> url, 'post', $this -> htmlOptions);?>
 <div class="row fileupload-buttonbar">
 	<div class="span7">
 		<!-- The fileinput-button span is used to style the file input field as button -->
-		<span class="btn btn-success fileinput-button">
-            <i class="icon-plus icon-white"></i>
-            <span><?php echo $this->t('1#Add files|0#Choose file', $this->multiple); ?></span>
+		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i> <span>Add files...</span>
 			<?php
             if ($this -> hasModel()) :
                 echo CHtml::activeFileField($this -> model, $this -> attribute, $htmlOptions) . "\n";
@@ -14,7 +12,6 @@
             endif;
             ?>
 		</span>
-        <?php if ($this->multiple) { ?>
 		<button type="submit" class="btn btn-primary start">
 			<i class="icon-upload icon-white"></i>
 			<span>Start upload</span>
@@ -28,7 +25,6 @@
 			<span>Delete</span>
 		</button>
 		<input type="checkbox" class="toggle">
-        <?php } ?>
 	</div>
 	<div class="span5">
 		<!-- The global progress bar -->
@@ -44,4 +40,4 @@
 <table class="table table-striped">
 	<tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
 </table>
-<?php if ($this->showForm) echo CHtml::endForm();?>
+<?php echo CHtml::endForm();?>
