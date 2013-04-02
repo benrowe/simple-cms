@@ -13,18 +13,22 @@ class MediaController extends AdminController
 		$this->forward('move');
 	}
 
+	/**
+	 * Returns a list of external action classes.
+	 * @return array
+	 */
 	public function actions()
 	{
 		return array(
-			'upload'=>array(
+			/*'upload'=>array(
 				'class'      => 'xupload.actions.XUploadAction',
 				'path'       => Yii::getPathOfAlias('webroot.media'),
 				'publicPath' => Yii::app()->baseUrl .'/media',
-            ),
+            ),*/
 		);
 	}
 
-	/*public function actionUpload()
+	public function actionUpload()
 	{
 		$request = Yii::app()->request;
 		$path = $request->getParam('path', '');
@@ -44,12 +48,11 @@ class MediaController extends AdminController
 			} else {
 			}
 		}
-		exit;
 		$this->render('upload', array(
 			'directory' => $directory,
 			'model'     => $model
 		));
-	}*/
+	}
 
 	/**
 	 * Create a new directory
@@ -89,6 +92,14 @@ class MediaController extends AdminController
 		));
 	}
 
+	/**
+	 * Download the requested file or directory
+	 * The request is based on the provided path. If the path is a directory, then an
+	 * archive is created and offered to the user
+	 *
+	 * @param  [type] $path [description]
+	 * @return [type]       [description]
+	 */
 	public function actionDownload($path)
 	{
 		$wr = Yii::getPathOfAlias('webroot');
@@ -451,6 +462,11 @@ class MediaController extends AdminController
 		return $items;
 	}
 
+	/**
+	 * Validate the provided model via ajax
+	 * @param  CModel $model [description]
+	 * @return [type]        [description]
+	 */
 	protected function ajaxValidateModel($model)
 	{
 		if(isset($_POST['ajax'])) {

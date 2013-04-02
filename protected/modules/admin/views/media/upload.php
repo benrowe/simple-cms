@@ -1,7 +1,6 @@
 <?php
 
 $this->pageTitle = 'Upload';
-
 $this->breadcrumbs=$this->_buildBreadcrumbs($directory, 'Upload');
 
 $this->widget('widgets.PageHeader', array(
